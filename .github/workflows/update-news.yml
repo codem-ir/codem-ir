@@ -13,6 +13,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Update news
+      - name: Download news
         run: |
-          echo "News updater ready"
+          echo "Getting CODM Persian news..."
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "Update news" || echo "No changes"
+          git push
