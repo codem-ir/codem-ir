@@ -2,7 +2,7 @@ let allNews=[],currentCat='all';
 const newsEl=document.getElementById('news'),searchEl=document.getElementById('search');
 async function loadNews(){
  try{
-  const r=await fetch('data/news.json?'+Date.now()); allNews=await r.json();
+  const r=await fetch('news.json?'+Date.now()); allNews=await r.json();
   document.getElementById('updated').textContent=new Date().toLocaleDateString('fa-IR');
   render();
  }catch(e){newsEl.innerHTML='<p>فعلاً خبری برای نمایش نیست. فایل data/news.json را بررسی کنید.</p>'}
