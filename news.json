@@ -1,0 +1,47 @@
+[
+  {
+    "title": "نمونه خبر: Season جدید Call of Duty: Mobile",
+    "summary": "این کارت نمونه است؛ سیستم سایت آماده دریافت و نمایش اخبار جدید است.",
+    "category": "update",
+    "category_label": "آپدیت و Season",
+    "date": "2026-08-25",
+    "icon": "🔥",
+    "url": "https://www.callofduty.com/mobile"
+  },
+  {
+    "title": "نمونه خبر: تغییرات اسلحه‌ها",
+    "summary": "برای انتشار خبر واقعی، عنوان، خلاصه، تاریخ و لینک منبع را در news.json قرار بده.",
+    "category": "weapon",
+    "category_label": "Buff / Nerf",
+    "date": "2026-08-25",
+    "icon": "🔫",
+    "url": "https://www.callofduty.com/mobile"
+  },
+  {
+    "title": "نمونه خبر: رویداد و آفر جدید",
+    "summary": "این بخش برای رویدادها، آفرها و اخبار مربوط به CP طراحی شده است.",
+    "category": "event",
+    "category_label": "رویداد و آفر",
+    "date": "2026-08-25",
+    "icon": "🎁",
+    "url": "https://www.callofduty.com/mobile"
+  },
+  {
+    "title": "نمونه خبر: مپ و مود جدید",
+    "summary": "اخبار مپ‌ها و مودهای تازه را در این دسته منتشر کن.",
+    "category": "map",
+    "category_label": "مپ و مود",
+    "date": "2026-08-25",
+    "icon": "🗺️",
+    "url": "https://www.callofduty.com/mobile"
+  },
+  {
+    "title": "نمونه خبر: مسابقات و Esports",
+    "summary": "برای اخبار رقابتی و مسابقات CODM.",
+    "category": "esports",
+    "category_label": "Esports",
+    "date": "2026-08-25",
+    "icon": "🏆",
+    "url": "https://www.callofduty.com/mobile"
+  }
+]
