@@ -1,6 +1,8 @@
 name: Update News
 
 on:
+  schedule:
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 jobs:
@@ -11,5 +13,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Test
-        run: echo "News system ready"
+      - name: Add news
+        run: |
+          echo '[{"title":"خبر جدید کالاف دیوتی موبایل","category":"آپدیت و Season","text":"خبر خودکار جدید اضافه شد","date":"2026-08-25"}]' > news.json
+
+      - name: Save changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add news.json
+          git commit -m "Auto update news" || exit 0
+          git push
